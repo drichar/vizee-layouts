@@ -1171,6 +1171,13 @@ export default function ManageAccountLayout() {
             </div>
           </div>
         </main>
+        <footer class="bg-black">
+          <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+            <p class="mt-8 text-center text-base text-gray-500">
+              &copy; 2020 Vizee. All rights reserved.
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
   );
