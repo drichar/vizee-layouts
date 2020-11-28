@@ -21,3 +21,17 @@ body {
 /* Stop purging. */
 
 /* Your own custom utilities */
+
+:root {
+  --vz-pink-50: #f2e8ec;
+  --vz-pink-100: #f1dee7;
+  --vz-pink-200: #f3c5de;
+  --vz-pink-300: #f471ad;
+  --vz-pink-400: #fb75b1;
+  --vz-pink-500: #f54e91;
+  --vz-pink-600: #ee326e;
+  --vz-pink-700: #d2295a;
+  --vz-pink-800: #b72a51;
+  --vz-pink-900: #9f2a4d;
+  --vz-primary: var(--vz-pink-600);
+}
