@@ -8,7 +8,7 @@ export default function ProfileMenu() {
     <div className="ml-3 relative">
       <div>
         <button
-          className="max-w-xs bg-gray-900 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-pink-500 lg:p-2 lg:rounded-md lg:hover:bg-gray-800"
+          className="max-w-xs bg-gray-900 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-pink-500"
           id="user-menu"
           onClick={() => setIsOpen(!isOpen)}
           aria-haspopup="true"
@@ -18,23 +18,6 @@ export default function ProfileMenu() {
             src="images/deadmau5.jpg"
             alt="deadmau5"
           />
-          <span className="hidden ml-3 text-gray-200 text-sm font-medium lg:block">
-            <span className="sr-only">Open user menu for </span>deadmau5
-          </span>
-          {/* Heroicon name: chevron-down */}
-          <svg
-            className="hidden flex-shrink-0 ml-1 h-5 w-5 text-gray-400 lg:block"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              fillRule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clipRule="evenodd"
-            />
-          </svg>
         </button>
       </div>
       {/* Profile dropdown panel, show/hide based on dropdown state.
