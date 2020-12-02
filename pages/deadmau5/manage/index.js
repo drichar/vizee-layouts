@@ -1,12 +1,12 @@
-import AccountLayout from '../../../components/layout/Account'
+import Layout from '../../../components/manage/Layout'
+import Header from '../../../components/manage/dashboard/Header'
 import Chart from '../../../components/Chart'
-import DashboardHeader from '../../../components/DashboardHeader'
 
 export default function Dashboard() {
   return (
-    <AccountLayout>
+    <Layout>
       <article>
-        <DashboardHeader />
+        <Header />
         <div className="mt-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-lg sm:text-2xl lg:text-lg xl:text-2xl leading-6 font-medium text-gray-200">
@@ -1047,6 +1047,6 @@ export default function Dashboard() {
           </div>
         </div>
       </article>
-    </AccountLayout>
+    </Layout>
   )
 }

@@ -1,11 +1,10 @@
 import { useState } from 'react'
 import Link from 'next/link'
-import OffCanvasMenu from '../OffCanvasMenu'
+import OffCanvasMenu from './OffCanvasMenu'
+import Menu from './Menu'
 import ProfileMenu from '../ProfileMenu'
-import Menu from '../Menu'
-import DashboardHeader from '../DashboardHeader'
 
-export default function AccountLayout({ children }) {
+export default function ManageLayout({ children }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (

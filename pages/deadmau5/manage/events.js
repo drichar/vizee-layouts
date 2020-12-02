@@ -1,12 +1,12 @@
-import AccountLayout from '../../../components/layout/Account'
+import Layout from '../../../components/manage/Layout'
 
 export default function Events() {
   return (
-    <AccountLayout>
+    <Layout>
       <div className="flex items-center justify-center" style={{ height: 'calc(100vh - 184px)'}}>
         <h1 className="text-6xl xs:text-7xl sm:text-8xl md:text-9xl text-gray-900 font-bold">Events</h1>
       </div>
-    </AccountLayout>
+    </Layout>
   )
 }
 

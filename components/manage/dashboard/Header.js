@@ -1,4 +1,4 @@
-export default function DashboardHeader() {
+export default function Header() {
   return (
     <div className="bg-gray-900">
       <div className="px-4 sm:px-6 lg:max-w-7xl lg:mx-auto lg:px-8">

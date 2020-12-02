@@ -65,6 +65,6 @@ export default function Chart({ labels, data }) {
   }, [chartRef])
 
   return (
-    <canvas ref={chartRef} class="p-5 w-full" />
+    <canvas ref={chartRef} className="p-5 w-full" />
   )
 }
