@@ -49,7 +49,7 @@ export default function ManageLayout({ children }) {
           </button>
           <div className="flex-1 px-4 flex justify-between sm:px-6 lg:max-w-7xl lg:mx-auto lg:px-8">
             <div className="flex-1 flex items-center">
-              <Link href="/">
+              <Link href="/events">
                 <a className="inline-flex items-center text-sm text-gray-400 hover:text-gray-200">
                   <svg className="h-6 w-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
