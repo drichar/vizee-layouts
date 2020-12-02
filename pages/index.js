@@ -155,7 +155,7 @@ export default function Home() {
       </div>
 
       <div className="bg-gray-950 overflow-hidden">
-        <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-7xl mx-auto pt-12 pb-20 px-4 sm:px-6 lg:px-8">
           <svg className="absolute top-0 left-full transform -translate-x-1/2 -translate-y-3/4 lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4" width="404" height="784" fill="none" viewBox="0 0 404 784" aria-hidden="true">
             <defs>
               <pattern id="8b1b5f72-e944-4457-af67-0c6d15a99f38" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
@@ -260,7 +260,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-8 pb-12 bg-gray-950 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
+        <div className="mt-8 pb-8 bg-gray-950 sm:mt-12 sm:pb-12 lg:mt-16 lg:pb-20">
           <div className="relative">
             <div className="absolute inset-0 h-3/4 bg-black"></div>
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -443,7 +443,7 @@ export default function Home() {
               <div className="lg:self-center">
                 <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
                   <span className="block">Ready to dive in?</span>
-                  <span className="block">Start your free trial today.</span>
+                  <span className="block">Start streaming today for free.</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-pink-200">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
                 <a href="#" className="mt-8 bg-white border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-base font-medium text-pink-600 hover:bg-pink-50">Sign up for free</a>
