@@ -40,7 +40,7 @@ export default function ProfileMenu() {
             className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
             role="menuitem"
           >
-            Manage Profile
+            My Account
           </a>
         </Link>
         <Link href="/deadmau5/manage/settings">
