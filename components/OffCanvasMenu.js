@@ -13,7 +13,7 @@ export default function OffCanvasMenu({ isOpen, onClose }) {
     if (!isOpen) {
       timerRef.current = setTimeout(() => {
         setHideMenu(true)
-      }, 300);
+      }, 300)
     }
     else {
       setHideMenu(false)
@@ -44,7 +44,7 @@ export default function OffCanvasMenu({ isOpen, onClose }) {
 
         <Transition
           show={isOpen}
-          className="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-gray-800"
+          className="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-gray-850"
           enter="transition ease-in-out duration-300 transform"
           enterFrom="-translate-x-full"
           enterTo="translate-x-0"

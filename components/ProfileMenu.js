@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Link from 'next/link'
 import { Transition } from '@headlessui/react'
 
 export default function ProfileMenu() {
@@ -15,19 +16,12 @@ export default function ProfileMenu() {
         >
           <img
             className="h-8 w-8 rounded-full"
-            src="images/deadmau5.jpg"
+            src="/images/deadmau5.jpg"
             alt="deadmau5"
           />
         </button>
       </div>
-      {/* Profile dropdown panel, show/hide based on dropdown state.
 
-          Entering: "transition ease-out duration-100"
-            From: "transform opacity-0 scale-95"
-            To: "transform opacity-100 scale-100"
-          Leaving: "transition ease-in duration-75"
-            From: "transform opacity-100 scale-100"
-            To: "transform opacity-0 scale-95" */}
       <Transition
         show={isOpen}
         className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
@@ -41,20 +35,22 @@ export default function ProfileMenu() {
         aria-orientation="vertical"
         aria-labelledby="user-menu"
       >
-        <a
-          href="#"
-          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-          role="menuitem"
-        >
-          Manage Profile
-        </a>
-        <a
-          href="#"
-          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-          role="menuitem"
-        >
-          Settings
-        </a>
+        <Link href="/deadmau5/manage">
+          <a
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+            role="menuitem"
+          >
+            Manage Profile
+          </a>
+        </Link>
+        <Link href="/deadmau5/manage/settings">
+          <a
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+            role="menuitem"
+          >
+            Settings
+          </a>
+        </Link>
         <a
           href="#"
           className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"

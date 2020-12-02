@@ -34,4 +34,17 @@ body {
   --vz-pink-800: #b72a51;
   --vz-pink-900: #9f2a4d;
   --vz-primary: var(--vz-pink-600);
+  --vz-gray-50: #fafafa;
+  --vz-gray-100: #f4f4f5;
+  --vz-gray-200: #e4e4e7;
+  --vz-gray-300: #d4d4d8;
+  --vz-gray-400: #a1a1aa;
+  --vz-gray-500: #71717a;
+  --vz-gray-600: #52525b;
+  --vz-gray-700: #3f3f46;
+  --vz-gray-750: #303035;
+  --vz-gray-800: #27272a;
+  --vz-gray-850: #1e1e21;
+  --vz-gray-900: #18181b;
+  --vz-gray-950: #131314;
 }
