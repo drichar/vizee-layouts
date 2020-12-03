@@ -245,6 +245,257 @@ export default function Home() {
       </div>
 
       <div className="bg-black">
+        <div className="pt-12 px-4 sm:px-6 lg:px-8 lg:pt-20">
+          <div className="text-center">
+            <h2 className="text-lg leading-6 font-semibold text-primary uppercase tracking-wider">
+              Pricing
+            </h2>
+            <p className="mt- text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
+              The right price for all creators
+            </p>
+            <p className="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-2xl">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-16 bg-gray-950 pb-12 lg:mt-20 lg:pb-20">
+          <div className="relative z-0">
+            <div className="absolute inset-0 h-5/6 bg-black lg:h-2/3"></div>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="relative lg:grid lg:grid-cols-7">
+                <div className="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3">
+                  <div className="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-l-lg">
+                    <div className="flex-1 flex flex-col">
+                      <div className="bg-white px-6 py-10">
+                        <div>
+                          <h3 className="text-center text-2xl font-medium text-gray-900" id="tier-hobby">
+                            Starter
+                          </h3>
+                          <div className="mt-4 flex items-center justify-center">
+                            <span className="px-3 flex items-start text-6xl tracking-tight text-gray-900">
+                              <span className="font-extrabold">
+                                Free
+                              </span>
+                            </span>
+                          </div>
+                          <p className="mt-5 text-center text-lg text-gray-500">
+                            Any creators can create a channel with videos &amp; livestreams
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
+                        <ul className="space-y-4">
+                          <li className="flex items-start">
+                            <div className="flex-shrink-0">
+                              <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </div>
+                            <p className="ml-3 text-base font-medium text-gray-500">
+                              Cross Platform Analytics
+                            </p>
+                          </li>
+
+                          <li className="flex items-start">
+                            <div className="flex-shrink-0">
+                              <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </div>
+                            <p className="ml-3 text-base font-medium text-gray-500">
+                              100 minutes of video per month
+                            </p>
+                          </li>
+
+                          <li className="flex items-start">
+                            <div className="flex-shrink-0">
+                              <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </div>
+                            <p className="ml-3 text-base font-medium text-gray-500">
+                              Earn up to 80% of every dollar
+                            </p>
+                          </li>
+                        </ul>
+                        <div className="mt-8">
+                          <div className="rounded-lg shadow-md">
+                            <a href="#" className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900" aria-describedby="tier-hobby">
+                              Get started
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4">
+                  <div className="relative z-10 rounded-lg shadow-xl">
+                    <div className="pointer-events-none absolute inset-0 rounded-lg border-2 border-pink-600" aria-hidden="true"></div>
+                    <div className="absolute inset-x-0 top-0 transform translate-y-px">
+                      <div className="flex justify-center transform -translate-y-1/2">
+                        <span className="inline-flex rounded-full bg-pink-600 px-4 py-1 text-sm font-semibold tracking-wider uppercase text-white">
+                          Most popular
+                        </span>
+                      </div>
+                    </div>
+                    <div className="bg-white rounded-t-lg px-6 pt-12 pb-10">
+                      <div>
+                        <h3 className="text-center text-3xl font-semibold text-gray-900 sm:-mx-6" id="tier-growth">
+                          Professional
+                        </h3>
+                        <div className="mt-4 flex items-center justify-center">
+                          <span className="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl">
+                            <span className="mt-2 mr-2 text-4xl font-medium">
+                              $
+                            </span>
+                            <span className="font-extrabold">
+                              99
+                            </span>
+                          </span>
+                          <span className="text-2xl font-medium text-gray-500">
+                            /month
+                          </span>
+                        </div>
+                        <p className="mt-5 text-center text-lg text-gray-500">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum sequi unde repudiandae natus.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
+                      <ul className="space-y-4">
+                        <li className="flex items-start">
+                          <div className="flex-shrink-0">
+                            <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                          </div>
+                          <p className="ml-3 text-base font-medium text-gray-500">
+                            Own your own data and video rights
+                          </p>
+                        </li>
+
+                        <li className="flex items-start">
+                          <div className="flex-shrink-0">
+                            <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                          </div>
+                          <p className="ml-3 text-base font-medium text-gray-500">
+                            Sell merch using Shopify
+                          </p>
+                        </li>
+
+                        <li className="flex items-start">
+                          <div className="flex-shrink-0">
+                            <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                          </div>
+                          <p className="ml-3 text-base font-medium text-gray-500">
+                            Profit optimizer
+                          </p>
+                        </li>
+
+                        <li className="flex items-start">
+                          <div className="flex-shrink-0">
+                            <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                          </div>
+                          <p className="ml-3 text-base font-medium text-gray-500">
+                            1K minutes of video per month
+                          </p>
+                        </li>
+
+                        <li className="flex items-start">
+                          <div className="flex-shrink-0">
+                            <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                          </div>
+                          <p className="ml-3 text-base font-medium text-gray-500">
+                            Earn up to 90% of every dollar
+                          </p>
+                        </li>
+                      </ul>
+                      <div className="mt-10">
+                        <div className="rounded-lg shadow-md">
+                          <a href="#" className="block w-full text-center rounded-lg border border-transparent bg-pink-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-pink-700" aria-describedby="tier-growth">
+                            Get started
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3">
+                  <div className="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-r-lg">
+                    <div className="flex-1 flex flex-col">
+                      <div className="bg-white px-6 py-10">
+                        <div>
+                          <h3 className="text-center text-2xl font-medium text-gray-900" id="tier-scale">
+                            Premium
+                          </h3>
+                          <p className="mt-5 text-center text-lg text-gray-500">
+                            For labels, management companies and larger networks
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
+                        <ul className="space-y-4">
+                          <li className="flex items-start">
+                            <div className="flex-shrink-0">
+                              <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </div>
+                            <p className="ml-3 text-base font-medium text-gray-500">
+                              Pariatur quod similique
+                            </p>
+                          </li>
+
+                          <li className="flex items-start">
+                            <div className="flex-shrink-0">
+                              <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </div>
+                            <p className="ml-3 text-base font-medium text-gray-500">
+                              Sapiente libero doloribus
+                            </p>
+                          </li>
+
+                          <li className="flex items-start">
+                            <div className="flex-shrink-0">
+                              <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </div>
+                            <p className="ml-3 text-base font-medium text-gray-500">
+                              Vel ipsa esse repudiandae
+                            </p>
+                          </li>
+                        </ul>
+                        <div className="mt-8">
+                          <div className="rounded-lg shadow-md">
+                            <a href="#" className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900" aria-describedby="tier-scale">
+                              Contact Partner Services
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="bg-black">
         <div className="pt-12 sm:pt-16 lg:pt-24">
           <div className="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto space-y-2 lg:max-w-none">
@@ -283,7 +534,6 @@ export default function Home() {
                     <ul className="space-y-4">
                       <li className="flex items-start">
                         <div className="flex-shrink-0">
-                          {/* Heroicon name: check */}
                           <svg className="h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                           </svg>
@@ -295,7 +545,6 @@ export default function Home() {
 
                       <li className="flex items-start">
                         <div className="flex-shrink-0">
-                          {/* Heroicon name: check */}
                           <svg className="h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                           </svg>
@@ -307,7 +556,6 @@ export default function Home() {
 
                       <li className="flex items-start">
                         <div className="flex-shrink-0">
-                          {/* Heroicon name: check */}
                           <svg className="h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                           </svg>
@@ -319,7 +567,6 @@ export default function Home() {
 
                       <li className="flex items-start">
                         <div className="flex-shrink-0">
-                          {/* Heroicon name: check */}
                           <svg className="h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                           </svg>
@@ -358,7 +605,6 @@ export default function Home() {
                     <ul className="space-y-4">
                       <li className="flex items-start">
                         <div className="flex-shrink-0">
-                          {/* Heroicon name: check */}
                           <svg className="h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                           </svg>
@@ -370,7 +616,6 @@ export default function Home() {
 
                       <li className="flex items-start">
                         <div className="flex-shrink-0">
-                          {/* Heroicon name: check */}
                           <svg className="h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                           </svg>
@@ -382,7 +627,6 @@ export default function Home() {
 
                       <li className="flex items-start">
                         <div className="flex-shrink-0">
-                          {/* Heroicon name: check */}
                           <svg className="h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                           </svg>
@@ -394,7 +638,6 @@ export default function Home() {
 
                       <li className="flex items-start">
                         <div className="flex-shrink-0">
-                          {/* Heroicon name: check */}
                           <svg className="h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                           </svg>
@@ -414,27 +657,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mt-4 relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
-            <div className="max-w-md mx-auto lg:max-w-5xl">
-              <div className="rounded-lg bg-white-5 px-6 py-8 sm:p-10 lg:flex lg:items-center">
-                <div className="flex-1">
-                  <div>
-                    <h3 className="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-white-20 text-gray-200">
-                      Discounted
-                    </h3>
-                  </div>
-                  <div className="mt-4 text-lg text-gray-400">Get full access to all of standard license features for solo projects that make less than $20k gross revenue for <span className="font-semibold text-gray-100">$29</span>.</div>
-                </div>
-                <div className="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
-                  <a href="#" className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-100 bg-white-20 hover:bg-white-30">
-                    Buy Discounted License
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="bg-gray-950">
         <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
