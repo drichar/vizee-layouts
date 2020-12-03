@@ -11,16 +11,25 @@ body {
   @apply bg-gray-50 dark:bg-gray-900;
 }
 
-/* Write your own custom component styles here */
-.btn-blue {
-  @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
-}
-
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
 
-/* Your own custom utilities */
+.menu-active {
+  @apply text-base font-medium text-white bg-black-50;
+}
+
+.menu-active svg {
+  @apply text-primary;
+}
+
+.menu-inactive {
+  @apply text-base font-medium text-gray-400 hover:text-white hover:bg-white-5;
+}
+
+.menu-inactive svg {
+  @apply text-gray-500;
+}
 
 :root {
   --vz-pink-50: #f2e8ec;
