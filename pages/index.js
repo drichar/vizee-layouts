@@ -174,31 +174,31 @@ export default function Home() {
             <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
               <div>
                 <div className="flex items-center justify-center h-12 w-12 rounded-md bg-pink-600 text-white">
-                  {/* Heroicon name: globe-alt */}
+                  {/* Heroicon name: database */}
                   <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                   </svg>
                 </div>
                 <div className="mt-5">
                   <dt className="text-lg leading-6 font-medium text-gray-100">
-                    Build your community
+                    Own your data
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
-                    Consequuntur omnis dicta cumque, inventore atque ab dolores aspernatur tempora ab doloremque.
+                    Email addresses and signals that help you identify the peope who make you the most money
                   </dd>
                 </div>
               </div>
 
               <div>
                 <div className="flex items-center justify-center h-12 w-12 rounded-md bg-pink-600 text-white">
-                  {/* Heroicon name: scale */}
+                  {/* Heroicon name: video-camera */}
                   <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                   </svg>
                 </div>
                 <div className="mt-5">
                   <dt className="text-lg leading-6 font-medium text-gray-100">
-                    No hidden fees
+                    Live &amp; Pre-recorded VOD
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
                     Corporis quisquam nostrum nulla veniam recusandae temporibus aperiam officia incidunt at distinctio ratione.
@@ -208,17 +208,17 @@ export default function Home() {
 
               <div>
                 <div className="flex items-center justify-center h-12 w-12 rounded-md bg-pink-600 text-white">
-                  {/* Heroicon name: lightning-bolt */}
+                  {/* Heroicon name: credit-card */}
                   <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
                   </svg>
                 </div>
                 <div className="mt-5">
                   <dt className="text-lg leading-6 font-medium text-gray-100">
-                    Instant transfers
+                    Get paid on time
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
-                    Omnis, illo delectus? Libero, possimus nulla nemo tenetur adipisci repellat dolore eligendi velit doloribus mollitia.
+                    With direct connection to Stripe&trade;, transfers are made in two days or less
                   </dd>
                 </div>
               </div>
@@ -232,10 +232,10 @@ export default function Home() {
                 </div>
                 <div className="mt-5">
                   <dt className="text-lg leading-6 font-medium text-gray-100">
-                    Analytics
+                    Actionable insights
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
-                    Veniam necessitatibus reiciendis fugit explicabo dolorem nihil et omnis assumenda odit? Quisquam unde accusantium.
+                    Take the guesswork out of making informed decisions
                   </dd>
                 </div>
               </div>
@@ -442,10 +442,9 @@ export default function Home() {
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
               <div className="lg:self-center">
                 <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-                  <span className="block">Ready to dive in?</span>
-                  <span className="block">Start streaming today for free.</span>
+                  <span className="block">Own your rights and earn 90% of every dollar.</span>
                 </h2>
-                <p className="mt-4 text-lg leading-6 text-pink-200">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla nec.</p>
+                <p className="mt-4 text-lg leading-6 text-pink-200">Vizee's easy-to-understand dashboard provides creators with key metrics to maximize earnings.</p>
                 <a href="#" className="mt-8 bg-white border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-base font-medium text-pink-600 hover:bg-pink-50">Sign up for free</a>
               </div>
             </div>
