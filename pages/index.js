@@ -132,7 +132,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-gray-950">
+      {/* <div className="bg-gray-950">
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
             <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
@@ -152,7 +152,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="bg-gray-950 overflow-hidden">
         <div className="relative max-w-7xl mx-auto pt-12 pb-20 px-4 sm:px-6 lg:px-8">
