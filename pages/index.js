@@ -184,7 +184,7 @@ export default function Home() {
                     Own your data
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
-                    Email addresses and signals that help you identify the peope who make you the most money
+                    Email addresses and signals that help you identify the people who make you the most money
                   </dd>
                 </div>
               </div>
