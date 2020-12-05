@@ -15,6 +15,10 @@ body {
 @tailwind utilities;
 /* Stop purging. */
 
+.page-min-height {
+  min-height: calc(100vh - var(--vz-nav-height) - var(--vz-footer-height));
+}
+
 .menu-active {
   @apply text-base font-medium text-white bg-black-50;
 }
@@ -32,6 +36,7 @@ body {
 }
 
 :root {
+  /* Colors */
   --vz-pink-50: #f2e8ec;
   --vz-pink-100: #f1dee7;
   --vz-pink-200: #f3c5de;
@@ -78,4 +83,8 @@ body {
   --vz-black-80: rgba(5, 5, 5, 0.8);
   --vz-black-90: rgba(5, 5, 5, 0.9);
   --vz-black: #050505;
+
+  /* Sizes */
+  --vz-nav-height: 64px;
+  --vz-footer-height: 120px;
 }
