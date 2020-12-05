@@ -73,7 +73,7 @@ export default function Menu() {
               <Link href="/">
                 <a>
                   <img className="hidden sm:block lg:hidden h-7 w-auto" src="/images/vizee-logo.svg" alt="Vizee" />
-                  <img className="black sm:hidden lg:block h-7 w-auto" src="/images/vizee-logo-text.svg" alt="Vizee" />
+                  <img className="block sm:hidden lg:block h-7 w-auto" src="/images/vizee-logo-text.svg" alt="Vizee" />
                 </a>
               </Link>
             </div>
