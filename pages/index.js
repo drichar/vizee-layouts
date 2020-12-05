@@ -165,10 +165,10 @@ export default function Home() {
             <rect width="404" height="784" fill="url(#8b1b5f72-e944-4457-af67-0c6d15a99f38)" />
           </svg>
 
-          <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
+          <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-12">
             <div className="lg:col-span-1">
               <h2 className="text-3xl font-extrabold tracking-tight text-gray-100 sm:text-4xl">
-                A better way to monetize video.
+                Before giving your creativity away for free on social, profit from exclusive premieres.
               </h2>
             </div>
             <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
@@ -201,7 +201,7 @@ export default function Home() {
                     Live &amp; Pre-recorded VOD
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
-                    Corporis quisquam nostrum nulla veniam recusandae temporibus aperiam officia incidunt at distinctio ratione.
+                    Set the price and exclulsive premiere dates for your videos and livestreams
                   </dd>
                 </div>
               </div>
@@ -251,7 +251,7 @@ export default function Home() {
               Pricing
             </h2>
             <p className="mt- text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
-              The right price for all creators
+              A plan for all creators to increase earnings
             </p>
             <p className="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-2xl">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum.
@@ -293,7 +293,7 @@ export default function Home() {
                               </svg>
                             </div>
                             <p className="ml-3 text-base font-medium text-gray-500">
-                              Cross Platform Analytics
+                              Sell videos &amp; live streams on your terms
                             </p>
                           </li>
 
