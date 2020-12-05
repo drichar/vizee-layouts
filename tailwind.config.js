@@ -53,6 +53,7 @@ module.exports = {
         'black-70': 'var(--vz-black-70)',
         'black-80': 'var(--vz-black-80)',
         'black-90': 'var(--vz-black-90)',
+        black: 'var(--vz-black)',
       },
     },
   },
