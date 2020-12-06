@@ -35,6 +35,30 @@ body {
   @apply text-gray-500;
 }
 
+.video-chat-grid {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+@media (max-width: 1023px) and (orientation: portrait) {
+  .video-chat-grid {
+    height: calc(100vh - var(--vz-nav-height));
+  }
+}
+
+@media (max-width: 1023px) and (orientation: landscape) {
+  .event-chat {
+    height: calc(100vh - var(--vz-nav-height));
+  }
+}
+
+@media (min-width: 1024px) {
+  .video-chat-grid {
+    grid-template-rows: none;
+    grid-template-columns: 1fr auto;
+  }
+}
+
 :root {
   /* Colors */
   --vz-pink-50: #f2e8ec;
