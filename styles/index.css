@@ -8,7 +8,7 @@
 
 html,
 body {
-  @apply bg-gray-50 dark:bg-gray-900;
+  @apply bg-black;
 }
 
 /* Start purging... */
@@ -16,7 +16,7 @@ body {
 /* Stop purging. */
 
 .page-min-height {
-  min-height: calc(100vh - var(--vz-nav-height) - var(--vz-footer-height));
+  min-height: var(--vz-page-min-height);
 }
 
 .menu-active {
@@ -86,5 +86,6 @@ body {
 
   /* Sizes */
   --vz-nav-height: 64px;
-  --vz-footer-height: 120px;
+	--vz-footer-height: 120px;
+	--vz-page-min-height: calc(100vh - var(--vz-nav-height) - var(--vz-footer-height));
 }

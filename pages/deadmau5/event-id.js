@@ -8,7 +8,7 @@ export default function Event() {
   return (
     <Layout>
       <article className="max-w-screen-2xl mx-auto sm:p-6 lg:p-8 lg:flex page-min-height">
-        <section className="flex-grow">
+        <section className="lg:flex-grow">
           <div className="aspect-w-16 aspect-h-9 mb-8">
             <iframe src="https://www.youtube.com/embed/x3d3LFhy-Kw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
@@ -27,10 +27,10 @@ export default function Event() {
               </button>
             </div>
           </div> */}
-          <div className="lg:flex lg:items-center lg:justify-between">
+          <div className="xl:flex xl:items-center xl:justify-between px-6">
             <div className="flex-1 min-w-0">
               <h2 className="text-2xl font-bold leading-7 text-white sm:text-3xl sm:truncate">
-                The Last Catbender The Last Catbender
+                The Last Catbender
               </h2>
               <div className="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
                 <div className="mt-2 flex items-center text-sm text-gray-300">
@@ -49,7 +49,7 @@ export default function Event() {
                 </div>
               </div>
             </div>
-            <div className="mt-5 flex lg:mt-0 lg:ml-4">
+            <div className="mt-5 flex xl:mt-0 xl:ml-4">
               <span className="hidden sm:block">
                 <button type="button" className="inline-flex items-center px-4 py-2 border border-gray-700 rounded-md shadow-sm text-sm lg:text-base font-medium text-gray-300 bg-transparent hover:bg-white-5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-pink-600">
                   {/* Heroicon name: pencil */}
@@ -112,7 +112,7 @@ export default function Event() {
             </div>
           </div>
         </section>
-        <aside className="flex-none lg:w-80">
+        <aside className="lg:flex-none lg:w-80">
 
         </aside>
       </article>
