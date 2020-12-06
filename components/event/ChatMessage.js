@@ -1,0 +1,24 @@
+export default function ChatMessage({ username, message }) {
+  return (
+    <div className="flex items-start text-xs px-6 py-1">
+      <img
+        className="h-6 w-6 rounded-full mr-3"
+        src={`https://avatars.dicebear.com/api/initials/${username}.svg`}
+        alt={username}
+      />
+      <div className="self-center text-white">
+        {/* Author chip */}
+        <div className="inline-flex items-baseline mr-2">
+          <span className="font-semibold opacity-70">
+            {username}
+          </span>
+          {/* Chat badges could go here */}
+        </div>
+        {/* Message */}
+        <span className="leading-4 break-words">
+          {message}
+        </span>
+      </div>
+    </div>
+  )
+}
