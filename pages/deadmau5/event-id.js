@@ -16,7 +16,7 @@ export default function Event() {
               </h2>
               <div className="mt-1 flex flex-col xl:flex-row xl:flex-wrap xl:mt-0">
                 <div className="mt-2 flex items-center xl:mr-6">
-                  <span class="inline-flex items-center px-2 py-0.5 rounded-sm text-xs font-semibold bg-primary text-white uppercase">
+                  <span className="inline-flex items-center px-2 py-0.5 rounded-sm text-xs font-semibold bg-primary text-white uppercase">
                     Live Now
                   </span>
                 </div>
