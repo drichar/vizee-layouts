@@ -1,9 +1,24 @@
+import { useRef, useEffect } from 'react'
 import ChatMessage from './ChatMessage'
 
 export default function Chat({ className }) {
+  const scrollRef = useRef(null)
+
+  useEffect(() => {
+    if (scrollRef.current) {
+      const scrollHeight = scrollRef.current.scrollHeight
+      const height = scrollRef.current.clientHeight
+      const maxScrollTop = scrollHeight - height
+      scrollRef.current.scrollTop = maxScrollTop > 0 ? maxScrollTop : 0
+    }
+  }, [])
+
   return (
     <>
-      <div className={`${className} absolute top-16 bottom-20 left-0 right-0 lg:top-0 lg:left-8 lg:bottom-16 overflow-y-auto bg-black mr-4 pr-4 lg:mr-0 lg:pr-0`}>
+      <div
+        ref={scrollRef}
+        className={`${className} absolute top-16 bottom-20 left-0 right-0 lg:top-0 lg:left-8 lg:bottom-16 overflow-y-auto bg-black mr-4 pr-4 lg:mr-0 lg:pr-0`}
+      >
         {CHAT_MESSAGES.map((data, i) => (
           <ChatMessage
             key={i}
@@ -35,18 +50,6 @@ export default function Chat({ className }) {
 }
 
 const CHAT_MESSAGES = [
-  {
-    username: 'DarkXrez',
-    message: `PSA: Don’t drink near your laptops`
-  },
-  {
-    username: 'Cameokillz',
-    message: `ayeeee`
-  },
-  {
-    username: 'yulia_i',
-    message: `@DarkXrez fuuuuuh that's rough`
-  },
   {
     username: 'kieterma',
     message: `those pads ouuh`
