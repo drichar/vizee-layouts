@@ -1,6 +1,6 @@
-export default function AvatarHandle() {
+export default function AvatarHandle({ username, }) {
   return (
-    <a href="#" className="flex-shrink-0 group block">
+    <a href="#" className="flex-shrink-0 group block mb-3">
       <div className="flex items-center">
         <div>
           <img className="inline-block h-12 w-12 rounded-full" src="/images/deadmau5.jpg" alt="deadmau5" />

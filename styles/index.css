@@ -36,12 +36,12 @@ body {
 }
 
 .video-chat-grid {
-  display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto;
+  grid-auto-rows: 1fr;
 }
 
 @media (max-width: 1023px) and (orientation: portrait) {
-  .video-chat-grid {
+  .video-chat-grid.show-chat {
     height: calc(100vh - var(--vz-nav-height));
   }
 }
@@ -57,6 +57,10 @@ body {
     grid-template-rows: none;
     grid-template-columns: 1fr auto;
   }
+}
+
+.chat-input::placeholder {
+  color: var(--vz-gray-500);
 }
 
 :root {
