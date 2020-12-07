@@ -254,7 +254,7 @@ export default function Home() {
               A plan for all creators to increase earnings
             </p>
             <p className="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-2xl">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum.
+              Get paid on a level playing field and optimize your earnings over time based on the quality of your viewers
             </p>
           </div>
         </div>
@@ -267,21 +267,21 @@ export default function Home() {
                 <div className="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3">
                   <div className="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-l-lg">
                     <div className="flex-1 flex flex-col">
-                      <div className="bg-white px-6 py-10">
+                      <div className="bg-white px-6 py-8">
                         <div>
-                          <h3 className="text-center text-2xl font-medium text-gray-900" id="tier-hobby">
+                          <h3 className="text-center text-3xl font-semibold text-gray-900" id="tier-hobby">
                             Starter
                           </h3>
-                          <div className="mt-4 flex items-center justify-center">
+                          {/* <div className="mt-4 flex items-center justify-center">
                             <span className="px-3 flex items-start text-6xl tracking-tight text-gray-900">
                               <span className="font-extrabold">
                                 Free
                               </span>
                             </span>
-                          </div>
-                          <p className="mt-5 text-center text-lg text-gray-500">
+                          </div> */}
+                          {/* <p className="mt-5 text-center text-lg text-gray-500">
                             Any creators can create a channel with videos &amp; livestreams
-                          </p>
+                          </p> */}
                         </div>
                       </div>
                       <div className="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
@@ -293,7 +293,7 @@ export default function Home() {
                               </svg>
                             </div>
                             <p className="ml-3 text-base font-medium text-gray-500">
-                              Sell videos &amp; live streams on your terms
+                              Free Account
                             </p>
                           </li>
 
@@ -304,7 +304,7 @@ export default function Home() {
                               </svg>
                             </div>
                             <p className="ml-3 text-base font-medium text-gray-500">
-                              100 minutes of video per month
+                              Sell videos on your terms
                             </p>
                           </li>
 
@@ -315,7 +315,29 @@ export default function Home() {
                               </svg>
                             </div>
                             <p className="ml-3 text-base font-medium text-gray-500">
-                              Earn up to 80% of every dollar
+                              Basic analytics
+                            </p>
+                          </li>
+
+                          <li className="flex items-start">
+                            <div className="flex-shrink-0">
+                              <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </div>
+                            <p className="ml-3 text-base font-medium text-gray-500">
+                              Bandwidth &amp; storage included
+                            </p>
+                          </li>
+
+                          <li className="flex items-start">
+                            <div className="flex-shrink-0">
+                              <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </div>
+                            <p className="ml-3 text-base font-medium text-gray-500">
+                              100 subscribers
                             </p>
                           </li>
                         </ul>
@@ -340,27 +362,30 @@ export default function Home() {
                         </span>
                       </div>
                     </div>
-                    <div className="bg-white rounded-t-lg px-6 pt-12 pb-10">
+                    <div className="bg-white rounded-t-lg px-6 pt-10 pb-8">
                       <div>
-                        <h3 className="text-center text-3xl font-semibold text-gray-900 sm:-mx-6" id="tier-growth">
+                        <h3 className="text-center text-4xl font-bold text-gray-900 sm:-mx-6" id="tier-growth">
                           Professional
                         </h3>
-                        <div className="mt-4 flex items-center justify-center">
+                        {/* <div className="mt-4 flex items-center justify-center">
+                          <span className="text-2xl font-medium text-gray-500">
+                            Earn up to
+                          </span>
                           <span className="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl">
-                            <span className="mt-2 mr-2 text-4xl font-medium">
-                              $
-                            </span>
                             <span className="font-extrabold">
-                              99
+                              90
+                            </span>
+                            <span className="mt-2 text-4xl font-medium">
+                              %
                             </span>
                           </span>
                           <span className="text-2xl font-medium text-gray-500">
-                            /month
+                            of every dollar
                           </span>
-                        </div>
-                        <p className="mt-5 text-center text-lg text-gray-500">
+                        </div> */}
+                        {/* <p className="mt-5 text-center text-lg text-gray-500">
                           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum sequi unde repudiandae natus.
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                     <div className="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
@@ -372,51 +397,62 @@ export default function Home() {
                             </svg>
                           </div>
                           <p className="ml-3 text-base font-medium text-gray-500">
-                            Own your own data and video rights
-                          </p>
-                        </li>
-
-                        <li className="flex items-start">
-                          <div className="flex-shrink-0">
-                            <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                            </svg>
-                          </div>
-                          <p className="ml-3 text-base font-medium text-gray-500">
-                            Sell merch using Shopify
-                          </p>
-                        </li>
-
-                        <li className="flex items-start">
-                          <div className="flex-shrink-0">
-                            <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                            </svg>
-                          </div>
-                          <p className="ml-3 text-base font-medium text-gray-500">
-                            Profit optimizer
-                          </p>
-                        </li>
-
-                        <li className="flex items-start">
-                          <div className="flex-shrink-0">
-                            <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                            </svg>
-                          </div>
-                          <p className="ml-3 text-base font-medium text-gray-500">
-                            1K minutes of video per month
-                          </p>
-                        </li>
-
-                        <li className="flex items-start">
-                          <div className="flex-shrink-0">
-                            <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                            </svg>
-                          </div>
-                          <p className="ml-3 text-base font-medium text-gray-500">
                             Earn up to 90% of every dollar
+                          </p>
+                        </li>
+
+                        <li className="flex items-start">
+                          <div className="flex-shrink-0">
+                            <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                          </div>
+                          <p className="ml-3 text-base font-medium text-gray-500">
+                            Everything included in Starter
+                          </p>
+                        </li>
+
+                        <li className="flex items-start">
+                          <div className="flex-shrink-0">
+                            <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                          </div>
+                          <p className="ml-3 text-base font-medium text-gray-500">
+                            Advanced analytics
+                          </p>
+                        </li>
+
+                        <li className="flex items-start">
+                          <div className="flex-shrink-0">
+                            <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                          </div>
+                          <p className="ml-3 text-base font-medium text-gray-500">
+                            Advanced theme customization
+                          </p>
+                        </li>
+
+                        <li className="flex items-start">
+                          <div className="flex-shrink-0">
+                            <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                          </div>
+                          <p className="ml-3 text-base font-medium text-gray-500">
+                            Creative services (Channel set up &amp; best practices)
+                          </p>
+                        </li>
+
+                        <li className="flex items-start">
+                          <div className="flex-shrink-0">
+                            <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                          </div>
+                          <p className="ml-3 text-base font-medium text-gray-500">
+                            Download email addresses
                           </p>
                         </li>
                       </ul>
@@ -433,14 +469,21 @@ export default function Home() {
                 <div className="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3">
                   <div className="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-r-lg">
                     <div className="flex-1 flex flex-col">
-                      <div className="bg-white px-6 py-10">
+                      <div className="bg-white px-6 py-8">
                         <div>
-                          <h3 className="text-center text-2xl font-medium text-gray-900" id="tier-scale">
-                            Premium
+                          <h3 className="text-center text-3xl font-semibold text-gray-900" id="tier-scale">
+                            White Label
                           </h3>
-                          <p className="mt-5 text-center text-lg text-gray-500">
+                          {/* <div className="mt-4 flex items-center justify-center">
+                            <span className="px-3 flex items-start text-5xl tracking-tight text-gray-900">
+                              <span className="font-extrabold">
+                                White label
+                              </span>
+                            </span>
+                          </div> */}
+                          {/* <p className="mt-5 text-center text-lg text-gray-500">
                             For labels, management companies and larger networks
-                          </p>
+                          </p> */}
                         </div>
                       </div>
                       <div className="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
@@ -452,7 +495,7 @@ export default function Home() {
                               </svg>
                             </div>
                             <p className="ml-3 text-base font-medium text-gray-500">
-                              Pariatur quod similique
+                              Live streaming
                             </p>
                           </li>
 
@@ -463,7 +506,7 @@ export default function Home() {
                               </svg>
                             </div>
                             <p className="ml-3 text-base font-medium text-gray-500">
-                              Sapiente libero doloribus
+                              Custom reporting
                             </p>
                           </li>
 
@@ -474,7 +517,29 @@ export default function Home() {
                               </svg>
                             </div>
                             <p className="ml-3 text-base font-medium text-gray-500">
-                              Vel ipsa esse repudiandae
+                              Volume discounts
+                            </p>
+                          </li>
+
+                          <li className="flex items-start">
+                            <div className="flex-shrink-0">
+                              <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </div>
+                            <p className="ml-3 text-base font-medium text-gray-500">
+                              API standarization
+                            </p>
+                          </li>
+
+                          <li className="flex items-start">
+                            <div className="flex-shrink-0">
+                              <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </div>
+                            <p className="ml-3 text-base font-medium text-gray-500">
+                              Marketing &amp; promotion
                             </p>
                           </li>
                         </ul>
@@ -666,14 +731,14 @@ export default function Home() {
             <div className="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
               <div className="lg:self-center">
                 <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-                  <span className="block">Own your rights and earn 90% of every dollar.</span>
+                  <span className="block">Creators earn up to 90% of every dollar.</span>
                 </h2>
-                <p className="mt-4 text-lg leading-6 text-pink-200">Vizee's easy-to-understand dashboard provides creators with key metrics to maximize earnings.</p>
-                <a href="#" className="mt-8 bg-white border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-base font-medium text-pink-600 hover:bg-pink-50">Sign up for free</a>
+                <p className="mt-4 text-lg leading-6 text-pink-200">Vizee's easy-to-understand dashboard provides you with key metrics to maximize earnings.</p>
+                <a href="#" className="mt-8 bg-white border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-lg font-medium text-pink-600 hover:bg-pink-50">Sign up for free</a>
               </div>
             </div>
             <div className="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
-              <img className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20" src="/images/vizee-screen.jpg" alt="App screenshot" />
+              <img className="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20" src="/images/vizee-screen-2.png" alt="App screenshot" />
             </div>
           </div>
         </div>
