@@ -12,7 +12,6 @@ export default function ChatMessage({ username, message }) {
           <span className="font-bold text-gray-400">
             {username}
           </span>
-          {/* Chat badges could go here */}
         </div>
         {/* Message */}
         <span className="leading-4 break-words">
