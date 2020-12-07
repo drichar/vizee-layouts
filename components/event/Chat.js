@@ -27,7 +27,7 @@ export default function Chat({ className }) {
           />
         ))}
       </div>
-      <div className={`${className} absolute inset-x-0 bottom-0 flex items-end pl-14 pr-5 pb-5 lg:pb-0`}>
+      <div className={`${className} absolute inset-x-0 bottom-0 flex items-end px-5 pb-5 lg:pb-0 lg:pl-14`}>
         <div className="flex-grow mt-1 relative rounded-md shadow-sm">
           <input
             type="text"
