@@ -253,9 +253,9 @@ export default function Home() {
             <p className="mt- text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
               A plan for all creators to increase earnings
             </p>
-            <p className="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-2xl">
+            {/* <p className="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-2xl">
               Get paid on a level playing field and optimize your earnings over time based on the quality of your viewers
-            </p>
+            </p> */}
           </div>
         </div>
 
