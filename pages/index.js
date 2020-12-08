@@ -117,7 +117,7 @@ export default function Home() {
                     Live &amp; pre-recorded video
                   </dt>
                   <dd className="mt-2 text-base text-gray-500">
-                    Set the price and exclulsive premiere dates for your videos and livestreams
+                    Set the price and exclusive premiere dates for your videos and livestreams
                   </dd>
                 </div>
               </div>
