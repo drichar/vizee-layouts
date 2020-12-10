@@ -62,6 +62,7 @@ export default function Home() {
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
             src="https://dam-media.s3.amazonaws.com/concert.mp4"
             autoPlay
+            playsInline
             muted
             loop
           />
