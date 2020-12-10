@@ -410,18 +410,7 @@ export default function Home() {
                               </svg>
                             </div>
                             <p className="ml-3 text-base font-medium text-gray-500">
-                              Unlimited live streaming
-                            </p>
-                          </li>
-
-                          <li className="flex items-start">
-                            <div className="flex-shrink-0">
-                              <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                              </svg>
-                            </div>
-                            <p className="ml-3 text-base font-medium text-gray-500">
-                              Unlimited bandwidth &amp; storage
+                              Unlimited live streaming &amp; storage
                             </p>
                           </li>
 
@@ -433,6 +422,17 @@ export default function Home() {
                             </div>
                             <p className="ml-3 text-base font-medium text-gray-500">
                               Creative Services
+                            </p>
+                          </li>
+
+                          <li className="flex items-start">
+                            <div className="flex-shrink-0">
+                              <svg className="flex-shrink-0 h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                              </svg>
+                            </div>
+                            <p className="ml-3 text-base font-medium text-gray-500">
+                              Managed Services
                             </p>
                           </li>
 
