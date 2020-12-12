@@ -472,9 +472,11 @@ export default function Home() {
                         </ul>
                         <div className="mt-8">
                           <div className="rounded-lg shadow-md">
-                            <a href="#" className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900" aria-describedby="tier-scale">
-                              Contact Partner Services
-                            </a>
+                            <Link href="/contact">
+                              <a className="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900" aria-describedby="tier-scale">
+                                Contact Partner Services
+                              </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
