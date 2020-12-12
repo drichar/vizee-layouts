@@ -27,35 +27,35 @@ export default function Contact() {
               </p>
               <form name="vizee-contact" method="POST" data-netlify="true" className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                 <div>
-                  <label for="first_name" className="block text-sm font-medium text-gray-300">First name</label>
+                  <label htmlFor="first_name" className="block text-sm font-medium text-gray-300">First name</label>
                   <div className="mt-1">
-                    <input type="text" name="first_name" id="first_name" autocomplete="given-name" className="block w-full bg-black shadow-sm sm:text-sm text-white focus:ring-pink-500 focus:border-pink-500 border-gray-700 rounded-md" />
+                    <input type="text" name="first_name" id="first_name" autoComplete="given-name" className="block w-full bg-black shadow-sm sm:text-sm text-white focus:ring-pink-500 focus:border-pink-500 border-gray-700 rounded-md" />
                   </div>
                 </div>
                 <div>
-                  <label for="last_name" className="block text-sm font-medium text-gray-300">Last name</label>
+                  <label htmlFor="last_name" className="block text-sm font-medium text-gray-300">Last name</label>
                   <div className="mt-1">
-                    <input type="text" name="last_name" id="last_name" autocomplete="family-name" className="block w-full bg-black shadow-sm sm:text-sm text-white focus:ring-pink-500 focus:border-pink-500 border-gray-700 rounded-md" />
+                    <input type="text" name="last_name" id="last_name" autoComplete="family-name" className="block w-full bg-black shadow-sm sm:text-sm text-white focus:ring-pink-500 focus:border-pink-500 border-gray-700 rounded-md" />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
-                  <label for="email" className="block text-sm font-medium text-gray-300">Email</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-300">Email</label>
                   <div className="mt-1">
-                    <input id="email" name="email" type="email" autocomplete="email" className="block w-full bg-black shadow-sm sm:text-sm text-white focus:ring-pink-500 focus:border-pink-500 border-gray-700 rounded-md" />
+                    <input id="email" name="email" type="email" autoComplete="email" className="block w-full bg-black shadow-sm sm:text-sm text-white focus:ring-pink-500 focus:border-pink-500 border-gray-700 rounded-md" />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
                   <div className="flex justify-between">
-                    <label for="phone" className="block text-sm font-medium text-gray-300">Phone</label>
+                    <label htmlFor="phone" className="block text-sm font-medium text-gray-300">Phone</label>
                     <span id="phone_description" className="text-sm text-gray-500">Optional</span>
                   </div>
                   <div className="mt-1">
-                    <input type="text" name="phone" id="phone" autocomplete="tel" aria-describedby="phone_description" className="block w-full bg-black shadow-sm sm:text-sm text-white focus:ring-pink-500 focus:border-pink-500 border-gray-700 rounded-md" />
+                    <input type="text" name="phone" id="phone" autoComplete="tel" aria-describedby="phone_description" className="block w-full bg-black shadow-sm sm:text-sm text-white focus:ring-pink-500 focus:border-pink-500 border-gray-700 rounded-md" />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
                   <div className="flex justify-between">
-                    <label for="how_can_we_help" className="block text-sm font-medium text-gray-300">Message</label>
+                    <label htmlFor="how_can_we_help" className="block text-sm font-medium text-gray-300">Message</label>
                     <span id="how_can_we_help_description" className="text-sm text-gray-500">Max. 500 characters</span>
                   </div>
                   <div className="mt-1">
@@ -69,32 +69,32 @@ export default function Contact() {
                   <div className="mt-4 grid grid-cols-1 gap-y-4">
                     <div className="flex items-center">
                       <input id="budget_under_25k" name="budget" value="under_25k" type="radio" className="focus:ring-pink-500 focus:ring-offset-black h-4 w-4 text-pink-600 border-gray-700" />
-                      <label for="budget_under_25k" className="ml-3">
+                      <label htmlFor="budget_under_25k" className="ml-3">
                         <span className="block text-sm text-gray-300">Less than $25K</span>
                       </label>
                     </div>
                     <div className="flex items-center">
                       <input id="budget_25k-50k" name="budget" value="25k-50k" type="radio" className="focus:ring-pink-500 focus:ring-offset-black h-4 w-4 text-pink-600 border-gray-700" />
-                      <label for="budget_25k-50k" className="ml-3">
+                      <label htmlFor="budget_25k-50k" className="ml-3">
                         <span className="block text-sm text-gray-300">$25K – $50K</span>
                       </label>
                     </div>
                     <div className="flex items-center">
                       <input id="budget_50k-100k" name="budget" value="50k-100k" type="radio" className="focus:ring-pink-500 focus:ring-offset-black h-4 w-4 text-pink-600 border-gray-700" />
-                      <label for="budget_50k-100k" className="ml-3">
+                      <label htmlFor="budget_50k-100k" className="ml-3">
                         <span className="block text-sm text-gray-300">$50K – $100K</span>
                       </label>
                     </div>
                     <div className="flex items-center">
                       <input id="budget_over_100k" name="budget" value="over_100k" type="radio" className="focus:ring-pink-500 focus:ring-offset-black h-4 w-4 text-pink-600 border-gray-700" />
-                      <label for="budget_over_100k" className="ml-3">
+                      <label htmlFor="budget_over_100k" className="ml-3">
                         <span className="block text-sm text-gray-300">$100K+</span>
                       </label>
                     </div>
                   </div>
                 </fieldset>
                 <div className="sm:col-span-2">
-                  <label for="how_did_you_hear_about_us" className="block text-sm font-medium text-gray-300">How did you hear about us?</label>
+                  <label htmlFor="how_did_you_hear_about_us" className="block text-sm font-medium text-gray-300">How did you hear about us?</label>
                   <div className="mt-1">
                     <input type="text" name="how_did_you_hear_about_us" id="how_did_you_hear_about_us" className="bg-black shadow-sm focus:ring-pink-500 focus:border-pink-500 block w-full sm:text-sm border-gray-700 rounded-md" />
                   </div>
