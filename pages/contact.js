@@ -1,17 +1,19 @@
 import Link from 'next/link'
-import Router, { useRouter } from 'next/router'
+// import Router, { useRouter } from 'next/router'
 import FormSuccess from '../components/FormSuccess'
 
 export default function Contact() {
-  const router = useRouter()
-  const isFormSuccess = !!router.query.success;
+  const queryString = window?.location.search
 
-  const handleSubmit = () => {
-    Router.push({
-      pathname: '/contact',
-      query: { success: true },
-    })
-  }
+  const params = new URLSearchParams(queryString)
+  const isSuccess = params.get('success') === 'true'
+
+  // const handleSubmit = () => {
+  //   Router.push({
+  //     pathname: '/contact',
+  //     query: { success: true },
+  //   })
+  // }
 
   return (
     <>
@@ -37,7 +39,7 @@ export default function Contact() {
               <p className="mt-4 text-lg text-gray-500 sm:mt-3">
                 We have custom plans to power your video business. Tell us your needs, and we'll contact you shortly.
               </p>
-              <form name="vizee-contact" method="POST" onSubmit={handleSubmit} data-netlify="true" className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+              <form name="vizee-contact" method="POST" action="/contact?success=true" data-netlify="true" className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                 <input type="hidden" name="form-name" value="vizee-contact" />
                 <div>
                   <label htmlFor="first_name" className="block text-sm font-medium text-gray-300">First name</label>
@@ -122,7 +124,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <FormSuccess isOpen={isFormSuccess} />
+      <FormSuccess isOpen={isSuccess} />
     </>
   )
 }
