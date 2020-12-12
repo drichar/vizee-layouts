@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="relative bg-black">
         <div className="hidden lg:block lg:absolute lg:inset-0">
           <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <img className="h-56 w-full object-cover lg:absolute lg:h-full" src="https://images.pexels.com/photos/3379942/pexels-photo-3379942.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" />
+            <img className="h-56 w-full object-cover lg:absolute lg:h-full" src="/images/pexels-photo-3379942.jpg" alt="" />
           </div>
         </div>
         <div className="relative pt-0 pb-16 px-4 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:grid lg:grid-cols-2">
