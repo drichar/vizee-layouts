@@ -35,19 +35,19 @@ export default function Contact() {
                 <div>
                   <label htmlFor="first_name" className="block text-sm font-medium text-gray-300">First name</label>
                   <div className="mt-1">
-                    <input type="text" name="first_name" id="first_name" autoComplete="given-name" className="block w-full bg-black shadow-sm sm:text-sm text-white focus:ring-pink-500 focus:border-pink-500 border-gray-700 rounded-md" />
+                    <input type="text" name="first_name" id="first_name" autoComplete="given-name" className="block w-full bg-black shadow-sm sm:text-sm text-white focus:ring-pink-500 focus:border-pink-500 border-gray-700 rounded-md" required />
                   </div>
                 </div>
                 <div>
                   <label htmlFor="last_name" className="block text-sm font-medium text-gray-300">Last name</label>
                   <div className="mt-1">
-                    <input type="text" name="last_name" id="last_name" autoComplete="family-name" className="block w-full bg-black shadow-sm sm:text-sm text-white focus:ring-pink-500 focus:border-pink-500 border-gray-700 rounded-md" />
+                    <input type="text" name="last_name" id="last_name" autoComplete="family-name" className="block w-full bg-black shadow-sm sm:text-sm text-white focus:ring-pink-500 focus:border-pink-500 border-gray-700 rounded-md" required />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
                   <label htmlFor="email" className="block text-sm font-medium text-gray-300">Email</label>
                   <div className="mt-1">
-                    <input id="email" name="email" type="email" autoComplete="email" className="block w-full bg-black shadow-sm sm:text-sm text-white focus:ring-pink-500 focus:border-pink-500 border-gray-700 rounded-md" />
+                    <input id="email" name="email" type="email" autoComplete="email" className="block w-full bg-black shadow-sm sm:text-sm text-white focus:ring-pink-500 focus:border-pink-500 border-gray-700 rounded-md" required />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
@@ -65,7 +65,7 @@ export default function Contact() {
                     <span id="how_can_we_help_description" className="text-sm text-gray-500">Max. 500 characters</span>
                   </div>
                   <div className="mt-1">
-                    <textarea id="how_can_we_help" name="how_can_we_help" aria-describedby="how_can_we_help_description" rows="4" className="block w-full bg-black shadow-sm sm:text-sm text-white focus:ring-pink-500 focus:border-pink-500 border-gray-700 rounded-md"></textarea>
+                    <textarea id="how_can_we_help" name="how_can_we_help" aria-describedby="how_can_we_help_description" rows="4" className="block w-full bg-black shadow-sm sm:text-sm text-white focus:ring-pink-500 focus:border-pink-500 border-gray-700 rounded-md" maxLength={500} required />
                   </div>
                 </div>
                 <fieldset className="sm:col-span-2">
@@ -102,15 +102,22 @@ export default function Contact() {
                 <div className="sm:col-span-2">
                   <label htmlFor="how_did_you_hear_about_us" className="block text-sm font-medium text-gray-300">How did you hear about us?</label>
                   <div className="mt-1">
-                    <input type="text" name="how_did_you_hear_about_us" id="how_did_you_hear_about_us" className="bg-black shadow-sm focus:ring-pink-500 focus:border-pink-500 block w-full sm:text-sm border-gray-700 rounded-md" />
+                    <input type="text" name="how_did_you_hear_about_us" id="how_did_you_hear_about_us" className="bg-black shadow-sm focus:ring-pink-500 focus:border-pink-500 block w-full sm:text-sm text-white border-gray-700 rounded-md" />
                   </div>
                 </div>
                 <div className="my-4 sm:col-span-2">
-                  <button type="submit" className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500">
+                  <button type="submit" className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-black focus:ring-pink-500">
                     Contact us
                   </button>
                 </div>
               </form>
+              <footer>
+                <div className="pt-20">
+                  <p className="text-center text-base text-gray-500">
+                    &copy; 2020 Vizee. All rights reserved.
+                  </p>
+                </div>
+              </footer>
             </div>
           </div>
         </div>
