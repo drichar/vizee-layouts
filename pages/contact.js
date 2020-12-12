@@ -1,19 +1,10 @@
 import Link from 'next/link'
-// import Router, { useRouter } from 'next/router'
+import { useRouter } from 'next/router'
 import FormSuccess from '../components/FormSuccess'
 
 export default function Contact() {
-  const queryString = window?.location.search
-
-  const params = new URLSearchParams(queryString)
-  const isSuccess = params.get('success') === 'true'
-
-  // const handleSubmit = () => {
-  //   Router.push({
-  //     pathname: '/contact',
-  //     query: { success: true },
-  //   })
-  // }
+  const router = useRouter()
+  const isFormSuccess = !!router.query.success;
 
   return (
     <>
@@ -124,7 +115,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <FormSuccess isOpen={isSuccess} />
+      <FormSuccess isOpen={isFormSuccess} />
     </>
   )
 }
