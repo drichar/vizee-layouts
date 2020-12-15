@@ -17,9 +17,11 @@ export default function Menu() {
           </a>
         </Link>
       </div>
-      <nav className="mt-5 flex-1 flex flex-col divide-y divide-gray-900">
+      <div className="mt-5 mb-1 px-2 space-y-1">
+        <AccountSwitcher />
+      </div>
+      <nav className="flex-1 flex flex-col divide-y divide-gray-900 overflow-y-auto">
         <div className="px-2 space-y-1">
-          <AccountSwitcher />
           <ActiveLink href="/deadmau5/manage" activeClassName={className.active}>
             <a className={className.inactive}>
               {/* Heroicon name: home */}
