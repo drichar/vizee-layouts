@@ -36,116 +36,6 @@ export default function AccountSwitcher() {
     return () => clearTimeout(timerRef.current)
   }, [])
 
-  const renderMenu = () => (
-    <div className="fixed inset-0 flex flex-col md:static bg-white px-5 py-6 sm:p-8">
-      <div className="md:hidden absolute top-2 right-2">
-        <button
-          className={cn('ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none', {
-            'focus:ring-2 focus:ring-inset focus:ring-primary': isOpen,
-            'focus:ring-0 hidden': !isOpen
-          })}
-          onClick={() => setIsOpen(false)}
-        >
-          <span className="sr-only">Close accounts menu</span>
-          {/* Heroicon name: x */}
-          <svg
-            className="h-6 w-6 text-gray-900"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-      </div>
-      <div className="flex-none md:hidden mb-6">
-        <h3 className="text-2xl font-medium text-gray-700">
-          Select Account
-        </h3>
-      </div>
-      <ul className="flex-grow divide-y divide-gray-200 pr-4 md:max-h-64 overflow-y-auto">
-        <li className="py-4 flex">
-          <img className="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="" />
-          <div className="ml-3">
-            <p className="text-sm font-medium text-gray-900">Calvin Hawkins</p>
-            <p className="text-sm text-gray-500">calvin.hawkins@example.com</p>
-          </div>
-        </li>
-
-        <li className="py-4 flex">
-          <img className="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="" />
-          <div className="ml-3">
-            <p className="text-sm font-medium text-gray-900">Kristen Ramos</p>
-            <p className="text-sm text-gray-500">kristen.ramos@example.com</p>
-          </div>
-        </li>
-
-        <li className="py-4 flex">
-          <img className="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="" />
-          <div className="ml-3">
-            <p className="text-sm font-medium text-gray-900">Ted Fox</p>
-            <p className="text-sm text-gray-500">ted.fox@example.com</p>
-          </div>
-        </li>
-
-        <li className="py-4 flex">
-          <img className="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="" />
-          <div className="ml-3">
-            <p className="text-sm font-medium text-gray-900">Calvin Hawkins</p>
-            <p className="text-sm text-gray-500">calvin.hawkins@example.com</p>
-          </div>
-        </li>
-
-        <li className="py-4 flex">
-          <img className="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="" />
-          <div className="ml-3">
-            <p className="text-sm font-medium text-gray-900">Kristen Ramos</p>
-            <p className="text-sm text-gray-500">kristen.ramos@example.com</p>
-          </div>
-        </li>
-
-        <li className="py-4 flex">
-          <img className="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="" />
-          <div className="ml-3">
-            <p className="text-sm font-medium text-gray-900">Ted Fox</p>
-            <p className="text-sm text-gray-500">ted.fox@example.com</p>
-          </div>
-        </li>
-
-        <li className="py-4 flex">
-          <img className="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="" />
-          <div className="ml-3">
-            <p className="text-sm font-medium text-gray-900">Calvin Hawkins</p>
-            <p className="text-sm text-gray-500">calvin.hawkins@example.com</p>
-          </div>
-        </li>
-
-        <li className="py-4 flex">
-          <img className="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="" />
-          <div className="ml-3">
-            <p className="text-sm font-medium text-gray-900">Kristen Ramos</p>
-            <p className="text-sm text-gray-500">kristen.ramos@example.com</p>
-          </div>
-        </li>
-
-        <li className="py-4 flex">
-          <img className="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="" />
-          <div className="ml-3">
-            <p className="text-sm font-medium text-gray-900">Ted Fox</p>
-            <p className="text-sm text-gray-500">ted.fox@example.com</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  )
-
   return (
     <div className="relative">
       <Trigger
@@ -156,16 +46,17 @@ export default function AccountSwitcher() {
       <Transition
         show={isOpen}
         className="md:hidden fixed z-10 inset-0 transform"
-        enter="transition ease-out duration-200"
-        enterFrom="opacity-0 -translate-y-1"
-        enterTo="opacity-100 translate-y-0"
-        leave="transition ease-in duration-150"
-        leaveFrom="opacity-100 translate-y-0"
-        leaveTo="opacity-0 -translate-x-1"
+        enter="ease-out duration-300"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="ease-in duration-200"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
       >
-        <div className="shadow-lg overflow-hidden">
-          {renderMenu()}
-        </div>
+        <Menu
+          onClose={() => setIsOpen(false)}
+          isOpen={isOpen}
+        />
       </Transition>
 
       <Trigger
@@ -187,9 +78,10 @@ export default function AccountSwitcher() {
         leaveFrom="opacity-100 translate-x-0"
         leaveTo="opacity-0 -translate-x-3"
       >
-        <div className="rounded-lg shadow-lg overflow-hidden">
-          {renderMenu()}
-        </div>
+        <Menu
+          onClose={() => setIsOpen(false)}
+          isOpen={isOpen}
+        />
       </Transition>
     </div>
   )
@@ -213,4 +105,70 @@ const Trigger = ({ className, isOpen, ...props }) => (
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
     </svg>
   </span>
+)
+
+const ACCOUNTS = [
+  {
+    name: 'Calvin Hawkins',
+    img: 'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+  },
+  {
+    name: 'Kristen Ramos',
+    img: 'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+  },
+  {
+    name: 'Ted Fox',
+    img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+  },
+]
+
+const Menu = ({ onClose, isOpen }) => (
+  <div className="fixed inset-0 bg-black-70 flex flex-col p-6 md:static md:bg-transparent md:p-0">
+    <div className="relative w-full m-auto max-w-sm flex flex-col bg-gray-800 md:static md:max-w-none px-5 py-6 sm:p-7 rounded-lg shadow-lg overflow-hidden">
+      <div className="md:hidden absolute top-2 right-2">
+        <button
+          className={cn('ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none', {
+            'focus:ring-2 focus:ring-inset focus:ring-primary': isOpen,
+            'focus:ring-0 hidden': !isOpen
+          })}
+          onClick={onClose}
+        >
+          <span className="sr-only">Close accounts menu</span>
+          {/* Heroicon name: x */}
+          <svg
+            className="h-6 w-6 text-gray-100"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <div className="flex-none md:hidden mb-6">
+        <h3 className="text-2xl font-medium text-gray-300">
+          Select Account
+        </h3>
+      </div>
+      <ul className="flex-grow md:max-h-72 overflow-y-auto">
+        {[...ACCOUNTS, ...ACCOUNTS, ...ACCOUNTS].map((account) => (
+          <li>
+            <a href="#" className="px-4 py-3 rounded flex items-center hover:bg-white-5">
+              <img className="h-10 w-10 rounded-full" src={account.img} alt={account.name} />
+              <div className="ml-3">
+                <p className="text-base font-medium text-gray-100">{account.name}</p>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
 )

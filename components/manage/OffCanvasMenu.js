@@ -55,7 +55,7 @@ export default function OffCanvasMenu({ isOpen, onClose }) {
           <div className="absolute top-0 right-0 -mr-12 pt-2">
             <button
               className={cn('ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none', {
-                'focus:ring-2 focus:ring-inset focus:ring-white': isOpen,
+                'focus:ring-2 focus:ring-inset focus:ring-primary': isOpen,
                 'focus:ring-0 hidden': !isOpen
               })}
               onClick={() => onClose()}

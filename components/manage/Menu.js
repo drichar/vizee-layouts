@@ -20,7 +20,7 @@ export default function Menu() {
       <div className="mt-5 mb-1 px-2 space-y-1">
         <AccountSwitcher />
       </div>
-      <nav className="flex-1 flex flex-col divide-y divide-gray-900 overflow-y-auto">
+      <nav className="flex-1 flex flex-col divide-y divide-gray-950 overflow-y-auto">
         <div className="px-2 space-y-1">
           <ActiveLink href="/deadmau5/manage" activeClassName={className.active}>
             <a className={className.inactive}>
