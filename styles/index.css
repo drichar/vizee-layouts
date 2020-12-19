@@ -8,12 +8,16 @@
 
 html,
 body {
-  @apply bg-gray-50 dark:bg-gray-900;
+  @apply bg-black;
 }
 
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
+
+.page-min-height {
+  min-height: var(--vz-page-min-height);
+}
 
 .menu-active {
   @apply text-base font-medium text-white bg-black-50;
@@ -31,7 +35,36 @@ body {
   @apply text-gray-500;
 }
 
+.video-chat-grid {
+  grid-template-rows: auto;
+  grid-auto-rows: 1fr;
+}
+
+@media (max-width: 1023px) and (orientation: portrait) {
+  .video-chat-grid.show-chat {
+    height: calc(100vh - var(--vz-nav-height));
+  }
+}
+
+@media (max-width: 1023px) and (orientation: landscape) {
+  .event-chat {
+    height: calc(100vh - var(--vz-nav-height));
+  }
+}
+
+@media (min-width: 1024px) {
+  .video-chat-grid {
+    grid-template-rows: none;
+    grid-template-columns: 1fr auto;
+  }
+}
+
+.chat-input::placeholder {
+  color: var(--vz-gray-500);
+}
+
 :root {
+  /* Colors */
   --vz-pink-50: #f2e8ec;
   --vz-pink-100: #f1dee7;
   --vz-pink-200: #f3c5de;
@@ -78,4 +111,9 @@ body {
   --vz-black-80: rgba(5, 5, 5, 0.8);
   --vz-black-90: rgba(5, 5, 5, 0.9);
   --vz-black: #050505;
+
+  /* Sizes */
+  --vz-nav-height: 64px;
+	--vz-footer-height: 120px;
+	--vz-page-min-height: calc(100vh - var(--vz-nav-height) - var(--vz-footer-height));
 }
