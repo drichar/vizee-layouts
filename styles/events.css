@@ -1,0 +1,30 @@
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  column-gap: 1.5rem;
+  row-gap: 2rem;
+}
+
+@media (min-width: 1280px) {
+  .event-card-info {
+    min-height: 5.75rem;
+  }
+}
+
+.event-card-info h2 a {
+  line-height: 1.25 !important;
+}
+
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
