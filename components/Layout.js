@@ -2,7 +2,7 @@ import Menu from './Menu'
 
 export default function Layout({ children }) {
   return (
-    <div className="h-screen flex flex-col bg-black pt-16">
+    <div className="min-h-screen flex flex-col bg-black pt-16">
       <header className="fixed top-0 inset-x-0 z-40">
         <Menu />
       </header>
