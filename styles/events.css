@@ -9,10 +9,6 @@
   .event-grid {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   }
-
-  .event-card-info {
-    min-height: 5.75rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -21,6 +17,26 @@
   }
 }
 
+@media (hover: hover) {
+  .event-card {
+    @apply transform transition-transform;
+  }
+
+  .event-card:hover {
+    @apply -translate-y-2;
+  }
+
+  .event-card:hover .event-name {
+    @apply text-primary;
+  }
+}
+
 .event-card-info h2 a {
   line-height: 1.25 !important;
+}
+
+@media (min-width: 640px) {
+  .event-card-info {
+    min-height: 5.75rem;
+  }
 }

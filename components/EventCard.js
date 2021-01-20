@@ -25,7 +25,7 @@ export default function EventCard({ event }) {
   }, [])
 
   return (
-    <article id={`card-${event.id}`} className="relative group cursor-pointer bg-gray-950 overflow-hidden shadow rounded-3xl transform transition-transform hover:-translate-y-2">
+    <article id={`card-${event.id}`} className="event-card relative cursor-pointer bg-gray-950 overflow-hidden shadow rounded-3xl">
       <div className="aspect-w-16 aspect-h-9">
         <img
           className="object-cover text-white"
@@ -37,7 +37,7 @@ export default function EventCard({ event }) {
         <h2>
           <a
             href={`https://vizee.live/${event.account.username}/${event.id}`}
-            className="event-clickable line-clamp-2 text-gray-100 group-hover:text-primary transition-colors font-bold text-xl xs:text-2xl sm:text-xl"
+            className="event-name event-clickable line-clamp-2 text-gray-100 transition-colors font-bold text-xl xs:text-2xl sm:text-xl"
             id={`event-link-${event.id}`}
             title={event.name}
           >
