@@ -1,13 +1,23 @@
 .event-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: 1fr;
   column-gap: 1.5rem;
   row-gap: 2rem;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 640px) {
+  .event-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+
   .event-card-info {
     min-height: 5.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .event-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   }
 }
 

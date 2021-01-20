@@ -16,7 +16,7 @@ export default function EventCard({ event }) {
 
     card.addEventListener('click', handleClick)
 
-    const clickableElements = Array.from(card.querySelectorAll('a'));
+    const clickableElements = Array.from(card.querySelectorAll('.event-clickable'));
     clickableElements.forEach((el) =>
       el.addEventListener('click', (e) => e.stopPropagation())
     );
@@ -37,7 +37,7 @@ export default function EventCard({ event }) {
         <h2>
           <a
             href={`https://vizee.live/${event.account.username}/${event.id}`}
-            className="line-clamp-2 text-gray-100 group-hover:text-primary transition-colors font-bold text-xl xs:text-2xl sm:text-3xl md:text-xl lg:text-2xl xl:text-xl"
+            className="event-clickable line-clamp-2 text-gray-100 group-hover:text-primary transition-colors font-bold text-xl xs:text-2xl sm:text-xl"
             id={`event-link-${event.id}`}
             title={event.name}
           >
@@ -47,7 +47,7 @@ export default function EventCard({ event }) {
         <p className="mb-4">
           <a
             href={`https://vizee.live/${event.account.username}`}
-            className="text-gray-400 hover:text-gray-300 transition-colors font-semibold text-base xs:text-lg sm:text-xl md:text-base lg:text-lg xl:text-base"
+            className="event-clickable text-gray-400 hover:text-gray-300 transition-colors font-semibold text-base xs:text-lg sm:text-base"
             title={event.account?.name || ''}
           >
             {event.account?.name}
@@ -55,7 +55,7 @@ export default function EventCard({ event }) {
         </p>
       </div>
       <div className="px-6 mb-1">
-        <time className="block text-gray-500 text-base xs:text-lg sm:text-xl md:text-base lg:text-lg xl:text-base" dateTime={moment(event.start).format()}>
+        <time className="block text-gray-500 text-base xs:text-lg sm:text-base lg:text-lg xl:text-base" dateTime={moment(event.start).format()}>
           <svg className="inline-block align-text-top w-5 h-5 mr-2 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
           </svg>
@@ -81,20 +81,20 @@ export default function EventCard({ event }) {
           </span>
         </div>
       */}
-      <div className="flex items-center justify-between pl-6 pr-2 py-2">
+      <div className="flex items-center justify-between pl-6 pr-2 py-2 mt-4">
         <div className="relative z-0 rounded-md">
-          <span className="text-gray-300 font-semibold uppercase text-lg sm:text-xl md:text-lg lg:text-base">
-            {event.price === '$0.00' ? 'Free' : event.price}
-          </span>
+          <button href="https://www.facebook.com" className="event-clickable relative inline-flex items-center justify-center px-4 py-1 rounded bg-gray-800 text-base font-medium text-gray-300 hover:text-gray-100 hover:bg-pink-600 focus:z-10 focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600 transition-colors">
+            Buy Ticket
+          </button>
         </div>
         <div className="relative z-0 inline-flex rounded-md">
-          <button type="button" className="-ml-px relative inline-flex items-center px-2 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-gray-100 focus:z-10 focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600">
+          <button type="button" className="event-clickable  relative inline-flex items-center px-2 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-gray-100 focus:z-10 focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600">
             <span className="sr-only">Share</span>
             <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
             </svg>
           </button>
-          <button type="button" className="relative inline-flex items-center px-2 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-gray-100 focus:z-10 focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600">
+          <button type="button" className="event-clickable relative inline-flex items-center px-2 py-2 rounded-md text-sm font-medium text-gray-500 hover:text-gray-100 focus:z-10 focus:outline-none focus:ring-1 focus:ring-pink-600 focus:border-pink-600">
             <span className="sr-only">Favorite</span>
             <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -102,7 +102,7 @@ export default function EventCard({ event }) {
           </button>
         </div>
       </div>
-      <p className="absolute top-0 left-0 px-4 py-4 transform origin-top-left xs:scale-110 sm:scale-125 md:scale-100 lg:scale-110 xl:scale-100">
+      <p className="absolute top-0 left-0 px-4 py-4 transform origin-top-left xs:scale-110 sm:scale-100">
         <span className="py-1 px-3 bg-primary rounded-sm shadow text-white font-extrabold uppercase">
           Available Now
         </span>
